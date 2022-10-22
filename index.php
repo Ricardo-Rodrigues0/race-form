@@ -1,8 +1,3 @@
-<?php
-      session_start();
-      include("./mysql/connection.php");
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -49,16 +44,16 @@
                     <div class="text_field">
                         <label for="tel">Telefone</label>
                         <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000" required />
-                        <!-- <label class="text_field">Genero</label> -->
+                        <label class="text_field">Genero</label>
                     </div>
-               <!-- <div>
-                        <input class="checkbox" name="masculino" type="checkbox" onclick="marcaDesmarca(this)">
+                    <div>
+                        <input class="checkbox" name="genre" type="checkbox" value="Masculino" onclick="marcaDesmarca(this)">
                         <label class="checkbox2">Masculino</label>
-                        <input class="checkbox" name="feminino" type="checkbox" onclick="marcaDesmarca(this)">
+                        <input class="checkbox" name="genre" type="checkbox" value="Feminino" onclick="marcaDesmarca(this)">
                         <label class="checkbox2">Feminino</label>
-                        <input class="checkbox" name="outro" type="checkbox" onclick="marcaDesmarca(this)">
+                        <input class="checkbox" name="genre" type="checkbox" value="Outro" onclick="marcaDesmarca(this)">
                         <label class="checkbox2">Outro</label>
-                    </div> -->
+                    </div>
                     <button class="btn_submit">Fazer inscrição</button>
                 </div>
             </div>

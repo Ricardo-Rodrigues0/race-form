@@ -12,7 +12,6 @@
 </head>
 
 <body>
-.div=date_diff
   <div class="col-md-9 mt-3">
     <div class="row">
       <?php
@@ -35,7 +34,8 @@
                   Idade: <?php echo $aux["age"]; ?><br />
                   Data Nascimento: <?php echo date('d/m/Y', strtotime($aux['birth_date'])); ?><br />
                   Telefone: <?php echo $aux["tel"]; ?><br />
-                  Inscrição: <?php echo date('d/m/Y', strtotime($aux['data_registro'])) . ' às ' . date('H:i', strtotime($aux['data_registro'])); ?><br />
+                  Gênero: <?php echo $aux["genre"]; ?><br />
+                  Inscrição: <?php echo date('d/m/Y', strtotime($aux['registration_date'])) . ' às ' . date('H:i', strtotime($aux['registration_date'])); ?><br />
                 </p>
               </div>
             </div>

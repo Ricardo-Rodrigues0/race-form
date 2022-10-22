@@ -3,7 +3,7 @@
 $host_db = "127.0.0.1";
 $user_db = "root";
 $senha_db = "";
-$database_db = "race";
+$database_db = "race2";
 
 $link = new mysqli($host_db, $user_db, $senha_db);
 $link->set_charset('utf8');
@@ -20,7 +20,8 @@ $query_create_table = "CREATE TABLE IF NOT EXISTS $database_db (
                         age VARCHAR(32) NOT NULL,
                         birth_date VARCHAR(32) NOT NULL,
                         tel VARCHAR(32) NOT NULL,
-                        data_registro DATETIME NOT NULL,
+                        genre VARCHAR(32) NOT NULL,
+                        registration_date DATETIME NOT NULL,
                         PRIMARY KEY (`id`));" or die("ERRO! não foi possível criar tabela -> " . $link->connect_error);
 
 $result_create_table = $link->query($query_create_table);

@@ -160,6 +160,16 @@ body * {
   }
 }
 
+.main_race2 {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* .checkbox {
     transform: scale(1.5);
     margin: 0px 5px 10px 10px;
@@ -169,3 +179,5 @@ body * {
     color: #f0ffffde;
     font-size: 16px;
 } */
+
+/* ========================================================================= */

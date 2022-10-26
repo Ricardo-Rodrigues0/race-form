@@ -11,6 +11,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
 
     <title>Corrida | Inscrição</title>
 </head>
@@ -23,11 +24,11 @@
                 <img src="./assets/image/race.svg" class="left_race_image" alt="race">
             </div>
             <div class="right_race">
-                <div class="card_race">
+                <div id="card_race" class="card_race">
                     <h1>Preencha seu cadastro</h1><br>
                     <div class="text_field">
                         <label for="full_name">Nome Completo</label>
-                        <input type="text" name="full_name" placeholder="Nome Completo" required />
+                        <input type="text" name="full_name" placeholder="Nome Completo"/>
                     </div>
                     <div class="text_field">
                         <label for="tel">CPF</label>
@@ -35,15 +36,15 @@
                     </div>
                     <div class="text_field">
                         <label for="age">Idade</label>
-                        <input type="number" name="age" placeholder="Idade" required />
+                        <input type="number" name="age" placeholder="Idade"/>
                     </div>
                     <div class="text_field">
                         <label for="birth_date">Data nascimento</label>
-                        <input type="date" name="birth_date" placeholder="Data Nascimento" required />
+                        <input type="date" name="birth_date" placeholder="Data Nascimento"/>
                     </div>
                     <div class="text_field">
                         <label for="tel">Telefone</label>
-                        <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000" required />
+                        <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000"/>
                         <label class="text_field">Genero</label>
                     </div>
                     <div>

@@ -24,8 +24,15 @@
 
         <div class="col-md-3">
           <div class="sidebar-module">
+            <div class="main_race">
             <div class="card">
-              <img src="../assets/image/race.svg" style="width: 10vw; display: flex; align-items: center; justify-content: center;" class="card-img-top" alt="Imagem participante">
+            <?php 
+                $imagem = '';
+                if ($aux["genre"] == 'Masculino') $imagem = '../assets/image/homem.jpg';
+                else if ($aux["genre"] == 'Feminino') $imagem = '../assets/image/mulher.jpg';
+                else $imagem = '../assets/image/race.svg';
+              ?>
+              <img src="<?php echo $imagem; ?>" style="width: 10vw; display: flex; align-items: center; justify-content: center;" class="card-img-top" alt="Imagem participante">
               <div class="card-body">
                 <h5 class="card-title" _msthash="2950259" _msttexthash="307684">Participante</h5>
                 <p class="card-text" _msthash="2874352" _msttexthash="10912447">
@@ -38,6 +45,7 @@
                   Inscrição: <?php echo date('d/m/Y', strtotime($aux['registration_date'])) . ' às ' . date('H:i', strtotime($aux['registration_date'])); ?><br />
                 </p>
               </div>
+            </div>
             </div>
           </div>
         </div>

@@ -28,31 +28,31 @@
                     <h1>Preencha seu cadastro</h1><br>
                     <div class="text_field">
                         <label for="full_name">Nome Completo</label>
-                        <input type="text" name="full_name" placeholder="Nome Completo"/>
+                        <input type="text" name="full_name" placeholder="Nome Completo" require/>
                     </div>
                     <div class="text_field">
                         <label for="tel">CPF</label>
-                        <input type="text" id="cpf" name="cpf" placeholder="CPF" />
+                        <input type="text" id="cpf" name="cpf" placeholder="CPF"  require/>
                     </div>
                     <div class="text_field">
                         <label for="age">Idade</label>
-                        <input type="number" name="age" placeholder="Idade"/>
+                        <input type="number" name="age" placeholder="Idade" require/>
                     </div>
                     <div class="text_field">
                         <label for="birth_date">Data nascimento</label>
-                        <input type="date" name="birth_date" placeholder="Data Nascimento"/>
+                        <input type="date" name="birth_date" placeholder="Data Nascimento" require/>
                     </div>
                     <div class="text_field">
                         <label for="tel">Telefone</label>
-                        <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000"/>
+                        <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000" require/>
                         <label class="text_field">Genero</label>
                     </div>
                     <div>
-                        <input class="checkbox" name="genre" type="checkbox" value="Masculino" onclick="marcaDesmarca(this)">
+                        <input class="checkbox" name="genre" type="checkbox" value="Masculino" onclick="marcaDesmarca(this)" require>
                         <label class="checkbox2">Masculino</label>
-                        <input class="checkbox" name="genre" type="checkbox" value="Feminino" onclick="marcaDesmarca(this)">
+                        <input class="checkbox" name="genre" type="checkbox" value="Feminino" onclick="marcaDesmarca(this)" require>
                         <label class="checkbox2">Feminino</label>
-                        <input class="checkbox" name="genre" type="checkbox" value="Outro" onclick="marcaDesmarca(this)">
+                        <input class="checkbox" name="genre" type="checkbox" value="Outro" onclick="marcaDesmarca(this)" require>
                         <label class="checkbox2">Outro</label>
                     </div>
                     <button class="btn_submit">Fazer inscrição</button>

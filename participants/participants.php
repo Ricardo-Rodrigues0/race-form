@@ -12,6 +12,11 @@
 </head>
 
 <body>
+<?php 
+        session_start();
+        include("../mysql/connection.php");
+?>
+
   <div class="main">
     <div class="text_card">
       <h1>Participantes da corrida</h1>
@@ -19,8 +24,6 @@
     <div class="col-md-9 mt-3">
       <div class="row">
         <?php
-        session_start();
-        include("../mysql/connection.php");
 
         $sql = mysqli_query($conexao, "SELECT * FROM $database_db ORDER BY full_name ASC") or die(mysqli_error($conexao));
 
@@ -49,7 +52,6 @@
                     <strong>‣ Data Nascimento:</strong> <?php echo date('d/m/Y', strtotime($aux['birth_date'])); ?><br />
                     <strong>‣ Telefone:</strong> <?php echo $aux["tel"]; ?><br />
                     <strong>‣ Gênero:</strong> <?php echo $aux["genre"]; ?><br />
-                    </p>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted"><strong>Inscrição feita dia <?php echo date('d/m/Y', strtotime($aux['registration_date'])) . ' às ' . date('H:i', strtotime($aux['registration_date'])); ?></strong></small>

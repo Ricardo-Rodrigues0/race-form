@@ -26,9 +26,6 @@ $query_create_table = "CREATE TABLE IF NOT EXISTS $database_db (
 
 $result_create_table = $link->query($query_create_table);
 
-// $sql = "INSERT INTO $database_db (id, full_name, cpf, age, birth_date, tel, genre, registration_date) VALUES (
-//         99, 'Joao Silva', '123.312.412-21', '31', '12/30/2002', '(31) 12345-1234', 'Masculino')";
-
 define('HOST', $host_db);
 define('USUARIO', $user_db);
 define('SENHA', $senha_db);

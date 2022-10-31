@@ -1,8 +1,3 @@
-<?php
-session_start();
-include("../mysql/connection.php");
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
